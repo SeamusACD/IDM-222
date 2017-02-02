@@ -1,0 +1,126 @@
+/*global rules*/
+
+* { 
+  box-sizing: border-box; 
+}
+
+html { 
+  font-size: 100%; 
+}
+
+body {
+  background-color: black;
+  font: 100%/1.4 Arial, sans-serif;
+}
+
+header {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.thumb {
+  text-align: center;
+  background-color: black;
+  margin: auto;
+  padding: 1rem;
+}
+
+.thumb img {
+  padding: 1rem;
+}
+
+
+.contain {
+  background-color: white;
+  margin: .5rem auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+aside {
+  background-color: #4DC0FF;
+  padding: 1rem;
+}
+
+/* this is at a tablet display */
+
+@media (min-width: 37.5rem) {
+  /* 600px */
+.contain {
+    background-color: black;
+    overflow: auto;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+li {
+    color: white;
+    display: inline-block;
+    padding: .5rem;
+  }
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+h3 {
+    color: white;
+}
+
+
+
+/* this is at desktop display */
+
+@media (min-width: 60rem) {
+  /* 960px */
+  
+.contain {
+  background-color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+}
+
+li {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+    font-size: 2rem;
+}
+ 
