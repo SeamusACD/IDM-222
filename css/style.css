@@ -35,13 +35,13 @@ li {
 .thumb {
   text-align: center;
   background-color: black;
-  margin: auto;
   padding: 1rem;
 }
 
-.thumb img {
-  padding: 1rem;
+.thumb2 {
+  background-color: black;
 }
+
 
 
 .contain {
@@ -51,10 +51,22 @@ li {
   width: 100%;
 }
 
-aside {
-  background-color: #4DC0FF;
-  padding: 1rem;
+.portImg {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
 }
+
+.portType {
+  color: white;
+  text-align: left;
+}
+
+.portType2 {
+  color: white;
+  text-align: center;
+}
+
 
 /* this is at a tablet display */
 
@@ -93,6 +105,21 @@ h3 {
 
 
 
+.portImg {
+  color: white;
+  margin: none;
+  padding-top: 1rem;
+}
+
+
+.portType {
+  color: white;
+  text-align: center;
+}
+
+
+
+
 /* this is at desktop display */
 
 @media (min-width: 60rem) {
@@ -100,6 +127,7 @@ h3 {
   
 .contain {
   background-color: white;
+  color: black;
 }
 
 body {
@@ -123,4 +151,26 @@ h3 {
     color: black;
     font-size: 2rem;
 }
- 
+
+.together {
+  display: inline-block;
+}
+
+.portImg {
+  color: white;
+  margin: auto;
+  font-size: 2rem;
+  padding-bottom: 1.8rem;
+}
+
+.block {
+  display: block;
+  float: left;
+  max-width: 50%;
+}
+
+.portType2 {
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
