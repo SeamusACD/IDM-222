@@ -72,10 +72,9 @@ a:hover {
 	color: red;
 }
 
-.homeImg .col-12 {
- 
+.col-5 {
+	color: white;
 }
-
 
 /*MEDIA Q__MEDIA Q__MEDIA Q__MEDIA Q__MEDIA Q__*/
 /* 600px */
@@ -158,9 +157,22 @@ a:hover {
 
 
 
+#wrapper div {
+	width: 85%;
+	margin: auto;
 
 
+}
 
+#wrapper p {
+	display: inline-block;
+	max-width: 100%;
+}
+
+#wrapper img {
+	float: right;
+	max-width: 100%;
+}
 
 
 
