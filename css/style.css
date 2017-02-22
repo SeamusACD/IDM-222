@@ -166,7 +166,7 @@ a:hover {
 
 #wrapper p {
 	display: inline-block;
-	max-width: 100%;
+	max-width 0%;
 }
 
 #wrapper img {
