@@ -85,7 +85,6 @@ body {
 }
 
 
-
 @media (min-width: 37.5rem) {
 .nav {
   background: black;
@@ -111,20 +110,8 @@ body {
 	margin: auto;
 }
 
-
-
-  /*.aside { flex: 1 auto; }
-
-
-*/}
-
 @media (min-width: 60rem) {
- /* .main    {
-     flex-grow: 3 times in size
-       flex-shrink: 0 (do not shrink) 
-    display: flex;
-    flex-wrap: row;
-}*/
+
 
 .header img {
 	max-width: 30%; 
