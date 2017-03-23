@@ -6,10 +6,6 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 
   -webkit-flex-flow: row wrap;
@@ -87,6 +83,7 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: column wrap;
   padding: 0;
+  font-family: 'Roboto';
 }
 
 .navigation a {
@@ -102,7 +99,6 @@ body {
 }
 
 .navigation li {
-
 }
 
 .navigation a:hover {
@@ -143,6 +139,18 @@ body {
 
 }
 
+/*HEADER___________________________________________________*/
+
+.header {
+  background: red;
+  color: white;
+  font-size: 1.9rem;
+  font-family: 'Nobile';
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
 
 /*HOME___________________________________________________*/
 
@@ -150,13 +158,6 @@ body {
 .aside-2 { order: 1; }
 .footer  { order: 3; }
 
-.header {
-  background: red;
-  color: white;
-  font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .aside-2 {
   background: white;
@@ -172,17 +173,21 @@ width: 90%;
   text-align: left;
   background: black;
   color: white;
+  font-family: 'Roboto';
+  line-height: 1.5rem;
   padding-top: 3%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-bottom: 2rem;
 }
 
-.main button {
+.main a {
   
   border-style: solid;
   border-color: white;
   border-radius: 0rem 0rem 0rem 0rem;
   font-size: 1rem;
+  text-decoration: none;
   background-color: black;
   color: white;
   padding: 1rem;
@@ -190,7 +195,7 @@ width: 90%;
   margin-bottom: 1rem; 
 }
 
-.main button:hover {
+.main a:hover {
   background-color: red;
   color: white;
   transition-duration: 200ms;
@@ -200,6 +205,7 @@ width: 90%;
   background: red;
   color: white;
   font-size: 1rem;
+  font-family: 'Roboto';
   padding: 1rem;
 }
 
@@ -221,11 +227,6 @@ hr {
   color: white;
   padding-left: 10%;
   padding-right: 10%;
-}
- 
-.header {
-    width: 100%;
-    font-size: 1.5rem;
 }
 
 }
@@ -266,41 +267,27 @@ hr {
 
 
 /*ABOUT___________________________________________________*/
-#about {
+.about {
   background-color: black;
 }
 
-#about h1 {
-  margin: 0rem;
-  padding: 1rem;
-  color: white;
-  background-color: red;
-  font-size: 1.5rem;
-}
-
-#about ul{
+.about ul{
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin: 0rem;
   padding-left: 0rem;
 }
 
-#about ul li {
+.about ul li {
   list-style: none;
   padding: .25rem;
   font-size: 1rem;
+  font-family: 'Roboto';
   color: white;
   width: 100%;
 }
 
-.contact h1 {
-  background-color: red;
-  margin: 0rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  color: white;
-}
-
+/*social media*/
 .icons {
 margin: auto;
 text-align: center;
@@ -342,7 +329,7 @@ background-color: black;
   width: 3.5rem;
 }
 
-#about ul li {
+.about ul li {
   list-style: none;
   padding: .25rem;
   font-size: 1rem;
@@ -354,7 +341,7 @@ background-color: black;
 
 @media all and (min-width: 50rem) {
 
-#about ul li {
+.about ul li {
   list-style: none;
   padding: .25rem;
   font-size: 1rem;
@@ -369,16 +356,10 @@ background-color: black;
 
 .project {
   background-color: black;
-
-}
-
-#projecth1 {
-  background-color: red;
   color: white;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin: 0rem;
-  max-width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
 }
 
 .project img {
@@ -390,7 +371,9 @@ background-color: black;
   max-width: 100%;
   margin: auto;
   font-size: 1rem;
-  padding: 1rem;
+  font-family: 'Roboto';
+  line-height: 1.5rem;
+  padding: 1.5rem;
   padding-bottom: 2rem;
   text-align: left;
   color: white;
@@ -403,7 +386,9 @@ background-color: black;
   margin: 0rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+
 }
 
 .white {
@@ -424,20 +409,14 @@ background-color: black;
   text-align: left;
   color: white;
   margin: auto;
-  padding: 2rem;
 }
 
 .projecthead {
-  background-color: red;
-  width: 30%;
   color: white;
   margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
+
 }
 
 @media all and (min-width: 50rem) {
@@ -452,159 +431,74 @@ background-color: black;
   max-width: 55%;
   color: white;
   margin: 0rem;
+  padding-left: 0rem;
 }
 
 }
-
-
 
 /*SERVICES___________________________________________________*/
 
-#services {
-  display: flex;
-  flex-flow: column wrap;
-
+.services {
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-#serv {
+.services ul {
   margin: 0rem;
-  padding: 1rem;
-  color: white;
-  background-color: red;
-  font-size: 1.5rem;
+  padding-left: 0rem;
+  padding-top: 1rem;
 }
 
 .services li {
   list-style: none;
-  text-align: left;
+  text-align: center;
+  font-family: 'Roboto';
+  color: white;
   padding: .5rem;
-  color: black;
+}
+
+.services img {
+  width: 80%;
+}
+
+.service_header {
   font-size: 1.5rem;
-  padding-bottom: 1.5rem;
+  font-family: 'Roboto';
 }
-
-.services h2 {
-  text-align: left;
-  background-color: red;
-  color: white;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
-  width: 25%;
-}
-
-.servhead {
-  text-align: left;
-  display: inline;
-  background-color: red;
-  color: white;
-  font-size: 1.3rem;
-  max-width: 55%;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  padding: 2rem; 
-  height: 10rem;
-}
-
 
 @media all and (min-width: 37.5rem) {
 
-#services {
-  display: flex;
-  flex-flow: column wrap;
-
-}
-
-#serv {
-  margin: 0rem;
-  padding: 1rem;
-  color: white;
-  background-color: red;
-  font-size: 1.5rem;
+.services ul {
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .services li {
-  list-style: none;
-  text-align: left;
-  padding: .5rem;
-  color: black;
-  font-size: 1.5rem;
-  padding-bottom: 1.5rem;
+  display: inline-block;
 }
 
-.services h2 {
-  text-align: left;
-  background-color: red;
-  color: white;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
-  width: 25%;
-}
-
-.servhead {
-  text-align: left;
-  display: inline;
-  background-color: red;
-  color: white;
-  font-size: 1.3rem;
-  max-width: 55%;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  padding: 2rem; 
-  height: 10rem;
+.services img {
+  width: 90%;
 }
 
 }
 
 @media all and (min-width: 50rem) {
 
-#services {
-  display: flex;
-  flex-flow: column wrap;
-
+.services img {
+  width: 45rem;
 }
 
-.services li {
-  list-style: none;
-  text-align: center;
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1.2rem;
-  color: white;
-}
-
-.services {
-  background-color: black;
-  padding: 2rem;
-}
-
-.servhead {
+.services ul {
+  width: 45rem;
   margin: auto;
-  text-align: center;
-  display: inline;
-  background-color: white;
-  border-style: solid;
-  border-color: red;
-  color: black;
-  padding-top: 1.5rem;
-  margin-top: 1rem;
-  width: 20rem;
-  height: 20rem;
-  font-size: 1.3rem;
-}
-
-#serv {
-  margin: 0rem;
-  padding: 1rem;
-  color: white;
-  background-color: red;
-  font-size: 1.5rem;
 }
 
 }
+
+
 
 
 
