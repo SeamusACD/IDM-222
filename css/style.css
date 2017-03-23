@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0px;
+  margin: 0rem;
 }
 
 .wrapper {
@@ -20,19 +20,58 @@ body {
 }
 
 .wrapper > * {
-  padding: 0px;
+  padding: 0rem;
   flex: 1 100%;
 }
 
+
+/*LOGO___________________________________________________*/
+
 .logo {
   background-color: red;
+  
+}
+
+.logo img {
+  width: 50%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+@media all and (min-width: 37.5rem) {
+
+.logo {
+  background-color: black;
+}
+
+.logo img {
+  float: left;
+  background-color: red;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 25%;
+  padding: 1rem;
+}
+
+}
+
+@media all and (min-width: 50rem) {
+
+.logo {
+  background-color: black;
   padding-left: 2rem;
   padding-top: 2rem;
 }
 .logo img {
-  width: 50%;
-  padding: 0rem;
+  width: 30%;
+  padding-bottom: 1rem;
 }
+
+}
+
+
+/*NAVIGATION___________________________________________________*/
+
 .navigation {
   list-style: none;
   margin: 0;
@@ -50,24 +89,20 @@ body {
   padding: 0;
 }
 
-
-
 .navigation a {
-  padding-top: 1rem;
-  padding-bottom:1rem;
+  padding-top: .5rem;
+  padding-bottom:.5rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   color: white;
   display: block;
   text-align: center;
   text-decoration: none;
-  /*border-style: solid;
-  border-color: black;*/
   border-top: solid white;
 }
 
 .navigation li {
-  /*padding: 1px;*/
+
 }
 
 .navigation a:hover {
@@ -76,37 +111,40 @@ body {
   transition-duration: 200ms;
 }
 
-@media all and (min-width: 600px) {
-  .navigation {
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+@media all and (min-width: 37.5rem) {
 
-    justify-content: flex-end;
-  }
-  .navigation li {
-  /*padding-top: 1px;*/
-  /*padding-bottom: 1px;*/
+.navigation {
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+  
+.navigation li {
+  width: 7rem;
 }
 
-  .navigation a {
-    border: none;
-  }
+.navigation a {
+  border: none;
 }
 
-@media all and (min-width: 800px) {
-  .navigation {
+}
+
+@media all and (min-width: 50rem) {
+
+.navigation {
     justify-content: flex-end;
-  }
-  .navigation a {
+}
+.navigation a {
   padding-top: 4rem;
-  /*padding-bottom:1rem;*/
-  /*padding-right: 1.5rem;*/
-  /*padding-left: 1.5rem;*/
 }
 .navigation {
   padding-right: 2rem;
 }
+
 }
+
+
+/*HOME___________________________________________________*/
 
 .main    { order: 2; }
 .aside-2 { order: 1; }
@@ -115,15 +153,19 @@ body {
 .header {
   background: red;
   color: white;
+  font-size: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.footer {
-  background: red;
-  color: white;
-  font-size: 1rem;
-  padding: 1rem;
+.aside-2 {
+  background: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+.aside-2 img {
+width: 90%;
 }
 
 .main {
@@ -139,7 +181,7 @@ body {
   
   border-style: solid;
   border-color: white;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0rem 0rem 0rem 0rem;
   font-size: 1rem;
   background-color: black;
   color: white;
@@ -154,74 +196,63 @@ body {
   transition-duration: 200ms;
 }
 
+.footer {
+  background: red;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+@media all and (min-width: 37.5rem) {
 
-.aside-2 {
-  background: white;
-  color: black;
-  overflow-x: hidden;
-}
+.aside { flex: 1 auto; }
+.main    { order: 2; }
+.aside-2 { order: 1; }
+.footer  { order: 3; }
 
-.aside-2 img {
-width: 90%;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
-  .main    { order: 2; }
-  .aside-2 { order: 1; }
-  .footer  { order: 3; }
-
-  .main {
+.main {
   text-align: left;
   background: black;
   color: white;
   padding-left: 10%;
   padding-right: 10%;
-  /*width: 50%;*/
 }
-
-.logo {
-  background-color: black;
-}
-
-.logo img {
-  float: left;
-  background-color: red;
-  width: 25%;
-  padding: 1rem;
-}
-
-  
+ 
 .header {
     width: 100%;
     font-size: 1.5rem;
-  }
+}
 
 }
 
-@media all and (min-width: 800px) {
-  .main    {
- 
-    flex:1 0;
-  }
-  /*.aside-1 { order: 3; }*/
-  .main    { order: 1; }
-  .aside-2 { order: 2; }
-  .footer  { order: 3; }
-  
+@media all and (min-width: 68.75rem) {
 
-  .main {
+.footer {
+  background: red;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.main { flex: 1 0;
+
+}
+
+.main    { order: 1; }
+.aside-2 { order: 2; }
+.footer  { order: 3; }
+  
+.main {
   text-align: left;
   background: black;
   color: white;
   padding-left: 5%;
   padding-right: 5%;
-  /*width: 50%;*/
 }
 
 .aside-2 {
@@ -229,55 +260,17 @@ width: 90%;
   color: black;
   padding: 0rem;
   width: 40%;
-  /*margin-right: 2rem;*/
 }
-
-.footer {
-}
-}
-
-#services {
-  display: flex;
-  flex-flow: column wrap;
 
 }
 
-.services li {
-  list-style: none;
-  text-align: left;
-  color: black;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
+
+/*ABOUT___________________________________________________*/
+#about {
+  background-color: black;
 }
 
-.services h2 {
-  text-align: left;
-  background-color: red;
-  color: white;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
-  max-width: 50%;
-}
-
-
-
-.servhead {
-  text-align: left;
-  display: inline;
-  background-color: red;
-  /*border-style: solid;*/
-  /*border-color: red;*/
-  color: white;
-  font-size: 1.3rem;
-  max-width: 45%;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  padding: 2rem; 
-}
-
-#serv {
+#about h1 {
   margin: 0rem;
   padding: 1rem;
   color: white;
@@ -285,31 +278,188 @@ width: 90%;
   font-size: 1.5rem;
 }
 
+#about ul{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0rem;
+  padding-left: 0rem;
+}
+
+#about ul li {
+  list-style: none;
+  padding: .25rem;
+  font-size: 1rem;
+  color: white;
+  width: 100%;
+}
+
+.contact h1 {
+  background-color: red;
+  margin: 0rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icons {
+margin: auto;
+text-align: center;
+background-color: black;
+}
+
+.icons img {
+  padding: .2rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: .5rem;
+  width: 3rem;
+}
+
+#face {
+  text-align: center;
+  background-color: black;
+}
+
+#face img {
+  max-width: 100%;
+}
+
+@media all and (min-width: 37.5rem) {
+
+.icons {
+margin: auto;
+text-align: center;
+background-color: black;
+}
+
+.icons img {
+  padding: .2rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: .5rem;
+  width: 3.5rem;
+}
+
+#about ul li {
+  list-style: none;
+  padding: .25rem;
+  font-size: 1rem;
+  color: white;
+  margin: auto;
+}
+
+}
+
+@media all and (min-width: 50rem) {
+
+#about ul li {
+  list-style: none;
+  padding: .25rem;
+  font-size: 1rem;
+  color: white;
+  margin: auto;
+}
+
+}
+
+
+/*PROJECTS___________________________________________________*/
+
+.project {
+  background-color: black;
+
+}
+
+#projecth1 {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0rem;
+  max-width: 100%;
+}
+
+.project img {
+  max-width: 100%;
+
+}
+
+.project p {
+  max-width: 100%;
+  margin: auto;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  color: white;
+  margin: 0rem;
+}
+
+.projecthead {
+  background-color: black;
+  color: white;
+  margin: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.white {
+  background-color: black;
+  color: red;
+  margin: 0rem;
+}
+
+
+@media all and (min-width: 37.5rem) {
+
+.project img {
+  max-width: 100%;
+}
+
+.project p {
+  max-width: 95%;
+  text-align: left;
+  color: white;
+  margin: auto;
+  padding: 2rem;
+}
+
+.projecthead {
+  background-color: red;
+  width: 30%;
+  color: white;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+}
+
+@media all and (min-width: 50rem) {
+
+.project div {
+  max-width: 85%;
+  /*padding-top: 1rem;*/
+  margin: auto;
+}
+
+.project p {
+  max-width: 55%;
+  color: white;
+  margin: 0rem;
+}
+
+}
 
 
 
+/*SERVICES___________________________________________________*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 600px) {
 #services {
   display: flex;
   flex-flow: column wrap;
@@ -348,8 +498,6 @@ width: 90%;
   text-align: left;
   display: inline;
   background-color: red;
-  /*border-style: solid;*/
-  /*border-color: red;*/
   color: white;
   font-size: 1.3rem;
   max-width: 55%;
@@ -358,47 +506,61 @@ width: 90%;
   padding: 2rem; 
   height: 10rem;
 }
+
+
+@media all and (min-width: 37.5rem) {
+
+#services {
+  display: flex;
+  flex-flow: column wrap;
+
 }
 
+#serv {
+  margin: 0rem;
+  padding: 1rem;
+  color: white;
+  background-color: red;
+  font-size: 1.5rem;
+}
 
+.services li {
+  list-style: none;
+  text-align: left;
+  padding: .5rem;
+  color: black;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 
+.services h2 {
+  text-align: left;
+  background-color: red;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  width: 25%;
+}
 
+.servhead {
+  text-align: left;
+  display: inline;
+  background-color: red;
+  color: white;
+  font-size: 1.3rem;
+  max-width: 55%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding: 2rem; 
+  height: 10rem;
+}
 
+}
 
+@media all and (min-width: 50rem) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 800px) {
 #services {
   display: flex;
   flex-flow: column wrap;
@@ -441,69 +603,25 @@ width: 90%;
   background-color: red;
   font-size: 1.5rem;
 }
-}
-
-
-
-
-.project img {
-  max-width: 85%;
-  margin: 2rem;
 
 }
 
-.projecthead {
-  background-color: red;
-  color: white;
-  margin: 0rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.project p {
-  max-width: 80%;
-  margin: auto;
-  font-size: 1rem;
-  padding-bottom: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-@media all and (min-width: 800px) {
-
-.project p {
-  max-width: 60%;
-  margin: auto;
-  font-size: 1rem;
-  padding-bottom: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
 
 
-.icons {
-list-style: none;
-margin: auto;
-text-align: center;
-padding: 1rem;
 
-}
 
-#face {
-  padding: 1rem;
-  text-align: center;
-}
 
-#face img {
-  max-width: 100%;
-}
 
-.contact h1 {
-  background-color: red;
-  margin: 0rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  color: white;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
